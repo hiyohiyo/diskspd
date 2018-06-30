@@ -29,6 +29,12 @@ SOFTWARE.
 
 #include "xmlresultparser.h"
 
+/// for CrystalDiskMark
+int XmlResultParser::GetTotalScore()
+{
+	return 0;
+}
+
 // TODO: refactor to a single function shared with the ResultParser
 void XmlResultParser::_Print(const char *format, ...)
 {

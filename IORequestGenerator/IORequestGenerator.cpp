@@ -1905,7 +1905,9 @@ bool IORequestGenerator::_PrecreateFiles(Profile& profile) const
     return fOk;
 }
 
-bool IORequestGenerator::GenerateRequests(Profile& profile, IResultParser& resultParser, PRINTF pPrintOut, PRINTF pPrintError, PRINTF pPrintVerbose, struct Synchronization *pSynch)
+/// for CrystalDiskMark
+bool IORequestGenerator::GenerateRequests(Profile& profile, IResultParser& resultParser, PRINTF pPrintOut, PRINTF pPrintError, PRINTF pPrintVerbose, struct Synchronization *pSynch, int *totalScore)
+// bool IORequestGenerator::GenerateRequests(Profile& profile, IResultParser& resultParser, PRINTF pPrintOut, PRINTF pPrintError, PRINTF pPrintVerbose, struct Synchronization *pSynch)
 {
     g_pfnPrintOut = pPrintOut;
     g_pfnPrintError = pPrintError;
@@ -1926,6 +1928,9 @@ bool IORequestGenerator::GenerateRequests(Profile& profile, IResultParser& resul
         SystemInformation system;
         string sResults = resultParser.ParseResults(profile, system, vResults);
         print("%s", sResults.c_str());
+
+		/// for CrystalDiskMark
+		*totalScore = resultParser.GetTotalScore() * 10;
     }
 
     return fOk;

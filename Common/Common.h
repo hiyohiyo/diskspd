@@ -1448,4 +1448,5 @@ class IResultParser
 {
 public:
     virtual string ParseResults(Profile& profile, const SystemInformation& system, vector<Results> vResults) = 0;
+	virtual int GetTotalScore() = 0;
 };

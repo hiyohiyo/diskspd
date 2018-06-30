@@ -231,12 +231,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\xmlprofileparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\iorequestgenerator.lib;$(SolutionDir)$(Platform)\$(Configuration)\resultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\xmlresultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\common.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SUBSYSTEM:CONSOLE,5.01 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -247,9 +250,10 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\xmlprofileparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\iorequestgenerator.lib;$(SolutionDir)$(Platform)\$(Configuration)\resultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\xmlresultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\common.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -263,9 +267,10 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\xmlprofileparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\iorequestgenerator.lib;$(SolutionDir)$(Platform)\$(Configuration)\resultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\xmlresultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\common.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -279,9 +284,10 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\xmlprofileparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\iorequestgenerator.lib;$(SolutionDir)$(Platform)\$(Configuration)\resultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\xmlresultparser.lib;$(SolutionDir)$(Platform)\$(Configuration)\common.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
